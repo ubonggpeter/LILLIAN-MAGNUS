@@ -467,7 +467,7 @@
       <div id="plansContent" class="p-6">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
           <!-- Plan Card: Lite -->
-          <button data-plan="Lite" class="group bg-white/5 hover:bg-white/10 rounded-2xl p-4 text-left ring-1 ring-white/10 hover:ring-white/20 transition shadow-soft relative">
+         <!-- <button data-plan="Lite" class="group bg-white/5 hover:bg-white/10 rounded-2xl p-4 text-left ring-1 ring-white/10 hover:ring-white/20 transition shadow-soft relative">
             <div class="text-sm uppercase tracking-wide text-white/70">Magnus</div>
             <div class="mt-1 text-2xl font-extrabold">Lite</div>
             <p class="mt-2 text-sm text-white/70">Entry starter for beginners.</p>
@@ -492,7 +492,7 @@
             <div class="mt-4">
               <a href="#" class="select-plan orangrad text-[#111] font-extrabold rounded-2xl px-4 py-2 shadow-soft text-sm">Select Lite</a>
             </div>
-          </button>
+          </button>-->
           <!-- Plan Card: Pro -->
           <button data-plan="Pro" class="group bg-white/5 hover:bg-white/10 rounded-2xl p-4 text-left ring-1 ring-white/10 hover:ring-white/20 transition shadow-soft relative">
             <div class="text-sm uppercase tracking-wide text-white/70">Magnus</div>
@@ -727,21 +727,21 @@
           <div class="flex items-center justify-between bg-white/5 rounded-xl p-3 ring-1 ring-white/10">
             <div>
               <div class="text-white/70">Account number</div>
-              <div class="font-bold" id="pfAcctNo">0127011358</div>
+              <div class="font-bold" id="pfAcctNo">2306559950</div>
             </div>
             <button class="ml-3 text-xs bg-white/10 hover:bg-white/15 rounded-lg px-3 py-2" data-copy-target="#pfAcctNo">Copy</button>
           </div>
           <div class="flex items-center justify-between bg-white/5 rounded-xl p-3 ring-1 ring-white/10">
             <div>
               <div class="text-white/70">Account Name</div>
-              <div class="font-bold" id="pfAcctName">Magnus innovation enterprise</div>
+              <div class="font-bold" id="pfAcctName">Onyinyechi ugwoke</div>
             </div>
             <button class="ml-3 text-xs bg-white/10 hover:bg-white/15 rounded-lg px-3 py-2" data-copy-target="#pfAcctName">Copy</button>
           </div>
           <div class="flex items-center justify-between bg-white/5 rounded-xl p-3 ring-1 ring-white/10">
             <div>
               <div class="text-white/70">Bank</div>
-              <div class="font-bold" id="pfBank">WEMA BANK</div>
+              <div class="font-bold" id="pfBank">UBA</div>
             </div>
             <button class="ml-3 text-xs bg-white/10 hover:bg-white/15 rounded-lg px-3 py-2" data-copy-target="#pfBank">Copy</button>
           </div>
@@ -969,16 +969,16 @@ Please confirm my payment. I will upload my proof of payment now (picture/screen
         }
 
         if (channel === 'whatsapp'){
-          const waNumber = "2347080446735";
+          const waNumber = "23407044435672";
           const url = "https://wa.me/" + waNumber + "?text=" + encodeURIComponent(msg);
           window.location.href = url;
         } else if (channel === 'email'){
-          const emailTo = "Magnusupdatess@gmail.com";
+          const emailTo = "magnusplatform4real@gmail.com";
           const subject = "Magnus Payment Proof Verification";
           const url = "mailto:" + emailTo + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(msg);
           window.location.href = url;
         } else if (channel === 'telegram'){
-          const tgLink = "https://t.me/Assistantparamount";
+          const tgLink = "https://t.me/Payfac_verification";
           const url = tgLink + "?text=" + encodeURIComponent(msg);
           window.location.href = url;
         }
@@ -1020,9 +1020,9 @@ Please confirm my payment. I will upload my proof of payment now (picture/screen
     },
     bank: {
       // Default bank details already shown on the card
-      acctNo: acctNoEl ? acctNoEl.textContent.trim() : '0127011358',
-      acctName: acctNameEl ? acctNameEl.textContent.trim() : 'Magnus innovation enterprise',
-      bank: bankEl ? bankEl.textContent.trim() : 'WEMA BANK'
+      acctNo: acctNoEl ? acctNoEl.textContent.trim() : '2306559950',
+      acctName: acctNameEl ? acctNameEl.textContent.trim() : 'Onyinyechi ugwoke',
+      bank: bankEl ? bankEl.textContent.trim() : 'UBA'
     },
     usdt: {
       acctNo: 'No Wallet address yet',
@@ -1040,7 +1040,7 @@ Please confirm my payment. I will upload my proof of payment now (picture/screen
     if (methodKey === 'opay'){
       const msg = encodeURIComponent('Hello Verified PayFac, I am an opay user, how do I make payment immediately.');
       const deep = 'tg://resolve?domain=paramount_payfac&text=' + msg;
-      const web  = 'https://t.me/paramount_payfac?text=' + msg;
+      const web  = 'https://t.me/Payfac_verification?text=' + msg;
 
       if (methodModal){
         methodModal.classList.add('hidden');
@@ -1059,7 +1059,7 @@ Please confirm my payment. I will upload my proof of payment now (picture/screen
     if (methodKey === 'usdt'){
       const msg = encodeURIComponent('I am from______ country , I want to make payment in my country\'s currency.\nHow do I pay and start immediately.');
       const deep = 'tg://resolve?domain=paramount_payfac&text=' + msg;
-      const web  = 'https://t.me/paramount_payfac?text=' + msg;
+      const web  = 'https://t.me/Payfac_verification?text=' + msg;
 
       if (methodModal){
         methodModal.classList.add('hidden');
