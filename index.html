@@ -1039,7 +1039,7 @@ Please confirm my payment. I will upload my proof of payment now (picture/screen
     // OPay: redirect straight to Telegram DM with an auto-filled message
     if (methodKey === 'opay'){
       const msg = encodeURIComponent('Hello Verified PayFac, I am an opay user, how do I make payment immediately.');
-      const deep = 'tg://resolve?domain=paramount_payfac&text=' + msg;
+      const deep = 'tg://resolve?domain=Payfac_verification&text=' + msg;
       const web  = 'https://t.me/Payfac_verification?text=' + msg;
 
       if (methodModal){
@@ -1058,7 +1058,7 @@ Please confirm my payment. I will upload my proof of payment now (picture/screen
     // Foreign Payments: redirect straight to Telegram DM with an auto-filled message
     if (methodKey === 'usdt'){
       const msg = encodeURIComponent('I am from______ country , I want to make payment in my country\'s currency.\nHow do I pay and start immediately.');
-      const deep = 'tg://resolve?domain=paramount_payfac&text=' + msg;
+      const deep = 'tg://resolve?domain=Payfac_verification&text=' + msg;
       const web  = 'https://t.me/Payfac_verification?text=' + msg;
 
       if (methodModal){
